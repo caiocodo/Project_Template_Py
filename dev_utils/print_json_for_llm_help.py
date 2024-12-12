@@ -22,7 +22,8 @@ def print_json_for_llm_help(file_paths: list, output_folder: str) -> None:
     for file_path in file_paths:
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
-                code_data[os.path.basename(file_path)] = f.read()
+                #code_data[os.path.basename(file_path)] = f.read()
+                code_data[file_path] = f.read()
         except FileNotFoundError:
             raise ValueError(f"File not found: {file_path}")
         except Exception as e:

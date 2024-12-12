@@ -1,7 +1,7 @@
 def main() -> None:
     print("main")
 
-    run_mode = "run"
+    run_mode = "print_files"
     # Valores válidos:
     # run -> execução normal
     # debug -> execução com prints de debug (implemente no seu código)
@@ -25,7 +25,7 @@ def main() -> None:
             r"README.md",
             r"shared_vars.py",
             r"dev_utils/console_log.py",
-            #r"dev_utils/print_json_for_llm_help.py",
+            r"dev_utils/print_json_for_llm_help.py",
             r"dev_utils/time_stamp.py",
             r"output.log",
             r"output_last_run.log",
